@@ -21,7 +21,14 @@
                      return false;
                  }
                  
-                 
+                 //Passwords don't match
+                 // Check if email id is valid;
+                 var pass = document.getElementById("password").value;
+                 var c_pass = document.getElementById("c_password").value;
+                 if ( pass !== c_pass) {
+                     alert("Passwords don't match");
+                     return false;
+                 }
              }
          </script>
     </head>
